@@ -4,7 +4,7 @@ import pickle
 
 app = Flask(__name__)
 
-# Load your trained Random Forest model
+# Loading model
 model = pickle.load(open('iris_model.pkl', 'rb'))
 
 @app.route('/')
